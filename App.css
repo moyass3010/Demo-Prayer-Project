@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+
+html {
+  direction: rtl;
+  font-family: "IBM Plex Sans Arabic", sans-serif !important;
+}
+
+
+
+.main-container {
+  display: flex;
+  flex-direction: column; /* العناصر تحت بعض */
+  justify-content: center; /* عمودي */
+  align-items: center;     /* أفقي */
+  min-height: 100vh;       /* طول الشاشة كله */
+  text-align: center;}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Mui */
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.MuiSvgIcon-root {
+  color: white !important;
+}
+
+.MuiCard-root {
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-5px);
+}
+
+/* خلي النصوص جوه الكارت متوسّطة */
+.MuiCardContent-root {
+  text-align: center;
+}
+
+/* في الموبايل، صغّر شوية حجم النصوص */
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.2rem;
+  }
+
+
+  .MuiTypography-h4 {
+    font-size: 1.5rem !important;
+  }
+
+  .MuiTypography-h6 {
+    font-size: 1rem !important;
+  }
+}
+/* Mui */
+
+
+
+
+.cards-row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding: 10px;
+  margin-top: 30px;
+  scroll-snap-type: x mandatory; /* يخلي السحب أنعم */
+}
+
+.cards-row::-webkit-scrollbar {
+  height: 8px;
+}
+
+.cards-row::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.3);
+  border-radius: 4px;
+}
+
+.cards-row::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+/* #theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+}
+body.dark #theme-toggle {
+  background: #374151;
+  color: white;
+} */
